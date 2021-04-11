@@ -1,0 +1,151 @@
+\begin{thebibliography}{10}
+
+\bibitem{Browne1}
+Matthew Browne and Saeed Ghidary.
+\newblock Convolutional neural networks for image processing: An application in
+  robot vision, 12 2003.
+
+\bibitem{Canny1}
+John Canny.
+\newblock A computational approach to edge detection.
+\newblock {\em Transaction on pattern analysis and machine Intelligence}, 8(6),
+  1986.
+
+\bibitem{cho2014learning}
+Kyunghyun Cho, Bart van Merrienboer, Caglar Gulcehre, Dzmitry Bahdanau, Fethi
+  Bougares, Holger Schwenk, and Yoshua Bengio.
+\newblock Learning phrase representations using rnn encoder-decoder for
+  statistical machine translation, 2014.
+
+\bibitem{DeepBig}
+Dan Cirean, Ueli Meier, Luca~Maria Gambardella, and Jürgen Schmidhuber.
+\newblock Deep big multilayer perceptrons for digit recognition.
+\newblock {\em springer}, 01 2012.
+
+\bibitem{Rumelhart1}
+Ronald J.~Williams David E.~Rumelhart, Geoffrey E.~Hinton.
+\newblock Learning representations by back-propagating errors.
+\newblock {\em Nature}, 323(9), 1986.
+
+\bibitem{Gama_2019}
+Fernando Gama, Antonio~G. Marques, Geert Leus, and Alejandro Ribeiro.
+\newblock Convolutional neural network architectures for signals supported on
+  graphs.
+\newblock {\em IEEE Transactions on Signal Processing}, 67(4):1034–1049, Feb
+  2019.
+
+\bibitem{heck2017simplified}
+Joel Heck and Fathi~M. Salem.
+\newblock Simplified minimal gated unit variations for recurrent neural
+  networks, 2017.
+
+\bibitem{lstm1}
+Sepp Hochreiter and Jürgen Schmidhuber.
+\newblock {Long Short-Term Memory}.
+\newblock {\em Neural Computation}, 9(8):1735--1780, 11 1997.
+
+\bibitem{Hopfield}
+J.J Hopfield.
+\newblock Neural networks and physical systems with emergent collecive
+  computational abilities.
+\newblock {\em Biophysics}, 79, 1982.
+
+\bibitem{MohamedIbn1}
+Mohamed Ibnkahla.
+\newblock Application of neural networks to digital communications - a survey.
+\newblock {\em Signal Processing}, 80:1185--1215, 2000.
+
+\bibitem{jing2019survey}
+Kun Jing and Jungang Xu.
+\newblock A survey on neural network language models, 2019.
+
+\bibitem{Muggleton2}
+Stephen Muggleton.
+\newblock Inductive logic programming.
+\newblock {\em New Generation Computing}, 8:295--318, 1991.
+
+\bibitem{POZNYAK2019250}
+Alexander Poznyak, Isaac Chairez, and Tatyana Poznyak.
+\newblock A survey on artificial neural networks application for identification
+  and control in environmental engineering: Biological and chemical systems
+  with uncertain models.
+\newblock {\em Annual Reviews in Control}, 48:250--272, 2019.
+
+\bibitem{RosenBlatt1}
+F.~RosenBlatt.
+\newblock The perceptron: A probaabilistic model for information storage and
+  organization in the brain.
+\newblock {\em Psychological Review}, 65(6), 1958.
+
+\bibitem{Rumelhart2}
+Rumelhart, E.~David, Mcclelland James, and L.~James.
+\newblock {\em Parallel distributed processing: explorations in the
+  microstructure of cognition. Volume 1. Foundations}.
+\newblock The MIT Press, 01 1986.
+
+\bibitem{MadhusmitaSahu}
+Madhusmita Sahu and Rasmita Dash.
+\newblock A survey on deep learning: Convolution neural network (cnn).
+\newblock {\em Annual Reviews in Control}, pages 317--325, 01 2021.
+
+\bibitem{Salakhutdinov}
+Ruslan Salakhutdinov and Geoffrey Hinton.
+\newblock Learning and evaluaing deep bolztmann machines.
+\newblock {\em MLR press}, 04 2008.
+
+\bibitem{Ehud1}
+Ehud~Y. Shapiro.
+\newblock inductive inference of theories from facts.
+\newblock Technical report, Yale University, 1981.
+
+\bibitem{Rajat1}
+Rajat~Vikram Singh.
+\newblock Imagenet winning cnn architectures - a review.
+\newblock Technical report, andrew cmu, 2016.
+
+\bibitem{Sornaminproceedings}
+Madasamy Sornam, Muthu~Subash Kavitha, and Vanitha Venkateswaran.
+\newblock A survey on image classification and activity recognition using deep
+  convolutional neural network architecture.
+\newblock {\em Annual Reviews in Control}, page~1, 12 2017.
+
+\bibitem{Muggleton1}
+WRAY~BUNTINE STEPHEN~MUGGLETON.
+\newblock Machine invention of first-order predicates by inverting resolution.
+\newblock In John Laird, editor, {\em Machine Learning Proceedings 1988}, pages
+  339--352. Morgan Kaufmann, San Francisco (CA), 1988.
+
+\bibitem{Sussillo2014RandomWI}
+David Sussillo and L.~Abbott.
+\newblock Random walk initialization for training very deep feedforward
+  networks.
+\newblock {\em arXiv: Neural and Evolutionary Computing}, 2014.
+
+\bibitem{8666928}
+W.~{Wang} and J.~{Gang}.
+\newblock Application of convolutional neural network in natural language
+  processing.
+\newblock In {\em 2018 International Conference on Information Systems and
+  Computer Aided Education (ICISCAE)}, pages 64--70, 2018.
+
+\bibitem{warren1}
+Walter~Pitts Warren S.~McCulloch.
+\newblock Logical calculus of the ideas immanent in nervous activity.
+\newblock {\em Bulletin of Mathematical Biology}, 52(1/2):99--115, 1943.
+
+\bibitem{WU20093432}
+Huaiqin Wu.
+\newblock Global stability analysis of a general class of discontinuous neural
+  networks with linear growth activation functions.
+\newblock {\em Information Sciences}, 179(19):3432--3441, 2009.
+
+\bibitem{XiaofanLi1}
+Sha~Zhang Xiaofan~Li, Fangwei~Dong.
+\newblock A survey on deep learning techniques in wireless signal recognition.
+\newblock {\em Hindawi}, 2019(12), 2019.
+
+\bibitem{zhou2016minimal}
+Guo-Bing Zhou, Jianxin Wu, Chen-Lin Zhang, and Zhi-Hua Zhou.
+\newblock Minimal gated unit for recurrent neural networks, 2016.
+
+\end{thebibliography}
