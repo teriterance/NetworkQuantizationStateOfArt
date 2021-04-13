@@ -87,13 +87,13 @@
 \date{\today} % Leave empty to omit a date
 \renewcommand{\maketitlehookd}{%
 \begin{abstract}
-  Les vingt dernières années ont vu une augmentation exponentielle de la puissance de calcul des ordinateur personnels,
+  Les vingt dernières années ont vu une augmentation exponentielle de la puissance de calcul des ordinateurs personnels,
   en plus de l'explosion des services de cloud et l'augmentation du nombre de fermes à serveurs pour le stockage de données. 
   Cette Augmentation a eu parmi ses conséquences de mettre à la disposition du plus grand nombre un certain nombre de 
   données, mais aussi l'explosion des méthodes de Réseaux de neurones. Ils ont été appliqués à un nombre important de problèmes 
   notamment en traitement d'image, traitement du son, en traitement du langage naturel (...) Domaines dans lesquels ils 
-  constituent à ce jour l'état de l'art. D'un autre côté, on a aussi eu une progression importante de l'Internet Des Objet, cela 
-  a créé le besoin de reseaux de neurones adaptés aux objet peut puissant. L'objectif de ce papier est de présenter les différentes 
+  constituent à ce jour l'état de l'art. D'un autre côté, on a aussi eu une progression importante de l'Internet des Objets, cela 
+  a créé le besoin de reseaux de neurones adaptés aux objets peut puissant. L'objectif de ce papier est de présenter les différentes 
   methodes permettant de compresser les réseaux de neurones et par là de stocker les réseaux dans un moindre espace, mais aussi 
   d'accélérer les calculs avec ces derniers.
 \end{abstract}
@@ -112,7 +112,7 @@
 
 \section{Introduction}
 L'Histoire des réseaux de neurones débute avec Warren S. McCulloch et Walter Pitts de chercheurs du MIT qui présentent 
-en 1943 un article sur la réalisation des fonctions neuronales par des fonctions electriques et des portes logiques\cite{warren1}.
+en 1943 un article sur la réalisation des fonctions neuronales par des fonctions électriques et des portes logiques\cite{warren1}.
 Leur approche est lié à une perception des fonctions neuronales comme des fonctions {\bf\textit{Tout ou rien}}. Cette avancée 
 sera complete plus tard par la définition du perceptron\cite{RosenBlatt1} et la decouverte de l'algorithme de retro-propagation 
 du gradiant\cite{Rumelhart1}.
@@ -148,7 +148,7 @@ de pruning, de représentation creuse notamment quantifie, de distillation de co
 
 \section{Types de Réseaux de Neurones}
 
-\subsection{Les Perceptrons Multi-Couche}
+\subsection{Le Perceptron}
 
 C'est l'expression la plus simple d'un réseau de neurones, il est constitué d'un seul neurone formel\cite{warren1}.
 
@@ -399,18 +399,47 @@ en cela qu'il sont issue de la composition d'un certain nombre de couche de neur
 
 \section{Pourquoi la compression des reseaux de neurones}%----------
 L'origine des objets connectes remonte a 1994 quand la start-up Violet a lance le concept de la lampe connecte en wifi DAL. Et depuis lors leur nombre n'a pa arrete de croitre, leur usage aussi. D'un autre cote le nombre d'outils 
-informatique a lui aussi augmente de facons considerable, avec l'invention des smartphone, des tabletes (...).
+informatique a lui aussi augmente de facons considerable, avec l'invention des smartphones, des tabletes et autres.
 
-Ces objets connnecte ont pour point commun de ne disposer ni d'une grande puissance de calcul ni d'un grand espace de stockage. Cette situation les eloignes des possiblite d'aplication des reseaux de neurones qui quand a eu on besoin
-d'une puissance de calcul importante et d'un espace de stockage lui aussi grand. Ils demandent donc le developpement de reseau de neurones adapté a leur conditions. 
+Ces objets connnectes ont pour point commun de ne disposer ni d'une grande puissance de calcul ni d'un grand espace de stockage. Cette situation les eloignes des possiblite d'aplication des reseaux de neurones qui quand a eu on besoin
+d'une puissance de calcule importante et d'un espace de stockage lui aussi grand.
 
-L'un des exemples est le deployement de reseaux de neurone tel que AlexNet qui demande une capacite de stockage de 200MB sur un telephone portable ou une camera connecte qui ne dispose que 100MB d'espace de disque. 
-Pour ce faire nous ser oblige de compresser le reseaux pour qu'il puisse etre stocker par ces dernier. Pour cela Nous pouvons utliser un certain nombre de methodes.
+\begin{table}[!h]  
+\begin{tabular}{|l|c|r|}
+    \hline
+    DNN & Size(MB) & Temps(Milion) \\
+    \hline
+    AlexNet & 200 & 720 \\
+    VGG-16 & 550 & 15 300 \\
+    GoogLeNet & 50 & 1550 \\
+  ResNet & 170 & 11 300 \\
+  \hline
+\end{tabular}
+\caption{Les Poids et temps de calcul de differents reseaux}
+\end{table}
+
+Pour rendre ces objet plus intelligent il est donc important pour nous de pouvoir developper des reseaux de neurones adaptés. Pour ce faire, 
+un certain nombre de moyens et de methodes ont ete developpe. Parmi les methodes qui s'attaquent a reduire le poid des reseaux on a, Le pruning, la quantification, la distillation de connaisance.
+D'autres approches visent une repartition des calclus entre plusieurs objets comme l'apprentissage federe. Nous explorerons ici en profondeur les approches qui 
+s'attellent a reduire la taille des reseaux et nous ferons une introduction de l'aprentissage federe. Enfin , Dans la mesure ndu possible, nous presenterons les resultas que nous avons eu en 
+modelisant les methodes.
 
 \section{Le Pruning} %-------------------------------
 
 \subsection{C'est quoi le Pruning}
-Le Prunning est la methode consistant a reduire la taille d'un reseaux en suprimant des poids dont la valeur a ete ramene a zero.
+L'une des premieres idee pour reduire la taille des reseaux en memoire, est de suprimer les connections inutiles entre les neurones.
+En effet lors de l'entrainement des reseaux de neurones et leur utilisation, ils existent potentiellement des connections qui se sont jamais 
+activee, leurs supression  fait donc gagner de l'espace de stockage.
+
+Le Pruning est la methode de reduction de taille des reseaux de neurones qui consiste a suprimer les poids inferieure a un certain seuil.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=70mm]{pruning.png}
+  \caption{Pruning}
+  \label{pruning}
+\end{figure}
+
 \subsection{Etat de l'art de la methode Pruning}
 \subsection{Le futur du Pruning}
 \subsection{Presentation de mes resultats}

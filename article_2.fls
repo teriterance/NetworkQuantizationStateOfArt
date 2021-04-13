@@ -287,6 +287,9 @@ INPUT ./images/GRU.png
 INPUT /home/gabin/Project/etudeQuantificationReseau/./images/MRU.png
 INPUT ./images/MRU.png
 INPUT ./images/MRU.png
+INPUT /home/gabin/Project/etudeQuantificationReseau/./images/pruning.png
+INPUT ./images/pruning.png
+INPUT ./images/pruning.png
 INPUT /home/gabin/Project/etudeQuantificationReseau/article_2.bbl
 INPUT /home/gabin/Project/etudeQuantificationReseau/article_2.bbl
 INPUT /home/gabin/Project/etudeQuantificationReseau/article_2.aux

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.9)  11 APR 2021 18:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.9)  13 APR 2021 23:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -629,45 +629,48 @@ Package pdftex.def Info: ./images/MRU.png  used on input line 382.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5 <./images/GRU.png> <./images/MRU.png>] (/home/gabin/Project/etudeQuantificationReseau/article_2.bbl
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+[5 <./images/GRU.png> <./images/MRU.png>]
+<./images/pruning.png, id=194, 1453.43pt x 786.94pt>
+File: ./images/pruning.png Graphic file (type png)
+<use ./images/pruning.png>
+Package pdftex.def Info: ./images/pruning.png  used on input line 438.
+(pdftex.def)             Requested size: 199.16928pt x 107.82933pt.
+ (/home/gabin/Project/etudeQuantificationReseau/article_2.bbl
 Underfull \hbox (badness 2065) in paragraph at lines 15--19
 \T1/pplx/m/n/10 (+20) Caglar Gul-cehre, Dzmitry Bah-danau,
  []
 
-[6]
+[6 <./images/pruning.png (PNG copy)>]
 Underfull \hbox (badness 6428) in paragraph at lines 107--111
 []\T1/pplx/m/n/10 (+20) Madasamy Sor-nam, Muthu Sub-ash
  []
 
 [7])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 439.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 468.
  [8
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 439.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 468.
  (/home/gabin/Project/etudeQuantificationReseau/article_2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 439.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 439.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 468.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 468.
 Package rerunfilecheck Info: File `article_2.out' has not changed.
-(rerunfilecheck)             Checksum: 2162FBE7FED9D0D19B3CEC138C9A4620;1266.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 439.
+(rerunfilecheck)             Checksum: 0659D66088DED569770B4D2600EEFBCB;1251.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 468.
  ) 
 Here is how much of TeX's memory you used:
- 11763 strings out of 481239
- 180937 string characters out of 5920378
- 496108 words of memory out of 5000000
- 26439 multiletter control sequences out of 15000+600000
+ 11772 strings out of 481239
+ 181113 string characters out of 5920378
+ 496150 words of memory out of 5000000
+ 26446 multiletter control sequences out of 15000+600000
  590445 words of font info for 295 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,45p,337b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,11n,45p,337b,467s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on /home/gabin/Project/etudeQuantificationReseau/article_2.pdf (8 pages, 597983 bytes).
+Output written on /home/gabin/Project/etudeQuantificationReseau/article_2.pdf (8 pages, 787607 bytes).
 PDF statistics:
- 258 PDF objects out of 1000 (max. 8388607)
- 220 compressed objects within 3 object streams
- 63 named destinations out of 1000 (max. 500000)
- 46785 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 261 PDF objects out of 1000 (max. 8388607)
+ 222 compressed objects within 3 object streams
+ 65 named destinations out of 1000 (max. 500000)
+ 46790 words of extra memory for PDF output out of 51595 (max. 10000000)
 
