@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex article_2"] 1618348590 "article_2.aux" "article_2.bbl" "article_2" 1618348593
+["bibtex article_2"] 1618512991 "article_2.aux" "article_2.bbl" "article_2" 1618513298
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "article_2.aux" 1618348592 6741 7ac42fd6c6b44e177cc5cfd7668eb56f "pdflatex"
-  "reference.bib" 1618134916 9301 02ec2d4eaf50a273767f3d5b6449a9fe ""
+  "article_2.aux" 1618513298 7031 675c2b20847a2950b2709c31912771f1 "pdflatex"
+  "reference.bib" 1618512979 9613 8ee2129713d4a031c6fc5ae85853dc4c ""
   (generated)
   "article_2.blg"
   "article_2.bbl"
-["pdflatex"] 1618348590 "/home/gabin/Project/etudeQuantificationReseau/article_2.tex" "/home/gabin/Project/etudeQuantificationReseau/article_2.pdf" "article_2" 1618348593
+["pdflatex"] 1618513296 "/home/gabin/Project/etudeQuantificationReseau/article_2.tex" "/home/gabin/Project/etudeQuantificationReseau/article_2.pdf" "article_2" 1618513298
   "/etc/texmf/web2c/texmf.cnf" 1617999565 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/gabin/Project/etudeQuantificationReseau/article_2.aux" 1618348592 6741 7ac42fd6c6b44e177cc5cfd7668eb56f ""
-  "/home/gabin/Project/etudeQuantificationReseau/article_2.tex" 1618348587 23286 58283b9511044a4d7887c50bc5649713 ""
+  "/home/gabin/Project/etudeQuantificationReseau/article_2.aux" 1618513298 7031 675c2b20847a2950b2709c31912771f1 ""
+  "/home/gabin/Project/etudeQuantificationReseau/article_2.tex" 1618513295 23986 c03cba0c13e098d2947fe061e33f944d ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm" 1136768653 2532 9ad73cf4dd2173a847f2a5f5608e0b9a ""
@@ -138,10 +138,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1617999743 4770781 1ed1abab22da9c3e2cc82e4db562318b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1617999778 8273642 b9068c3531c37ebcfd741533092c9a20 ""
-  "article_2.aux" 1618348592 6741 7ac42fd6c6b44e177cc5cfd7668eb56f "pdflatex"
-  "article_2.bbl" 1618348590 5362 80b2509ba8cc85064a265196748ee652 "bibtex article_2"
-  "article_2.out" 1618348592 1251 0659d66088ded569770b4d2600eefbcb "pdflatex"
-  "article_2.tex" 1618348587 23286 58283b9511044a4d7887c50bc5649713 ""
+  "article_2.aux" 1618513298 7031 675c2b20847a2950b2709c31912771f1 "pdflatex"
+  "article_2.bbl" 1618512991 5564 41b02b3329e5ce6ab002cfba6828cbaa "bibtex article_2"
+  "article_2.out" 1618513298 1251 0659d66088ded569770b4d2600eefbcb "pdflatex"
+  "article_2.tex" 1618513295 23986 c03cba0c13e098d2947fe061e33f944d ""
   "images/Colored_neural_network.png" 1618050289 98609 97826a95fc0bbfccad0d5205552ad7ec ""
   "images/CulochNeurone.png" 1618053362 4920 3f171c9514c0dd7115a643e58caf73d2 ""
   "images/GRU.png" 1618091657 27112 3810ae8be49b21152d94181692041497 ""
@@ -151,10 +151,11 @@
   "images/canny.png" 1618080621 137484 30331c25e9da93feea812e3f8ddaf53f ""
   "images/convneural.png" 1618082334 5621 211403137c2ab866570afe4191925cf7 ""
   "images/pruning.png" 1618348526 187969 340309ec7c083cad209a42469e1022ff ""
+  "images/pruning_steps.png" 1618510604 51554 9f043407915be08343c7db914567237a ""
   (generated)
+  "article_2.aux"
+  "article_2.pdf"
   "/home/gabin/Project/etudeQuantificationReseau/article_2.pdf"
   "article_2.log"
-  "article_2.pdf"
   "/home/gabin/Project/etudeQuantificationReseau/article_2.log"
-  "article_2.aux"
   "article_2.out"

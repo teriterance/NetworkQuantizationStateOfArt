@@ -83,6 +83,12 @@ Rumelhart, E.~David, Mcclelland James, and L.~James.
   microstructure of cognition. Volume 1. Foundations}.
 \newblock The MIT Press, 01 1986.
 
+\bibitem{SYKung}
+Yu~Hen~Hu S.~Y.~Kung.
+\newblock A forbenius approximation reduction method (farm) for determining
+  optimal number of hidden unints.
+\newblock {\em Proceedings of the IJCNN-91}, 1991.
+
 \bibitem{MadhusmitaSahu}
 Madhusmita Sahu and Rasmita Dash.
 \newblock A survey on deep learning: Convolution neural network (cnn).
