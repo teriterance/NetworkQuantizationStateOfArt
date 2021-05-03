@@ -337,16 +337,17 @@ of not taking into account temporal values and are quite useful for analyzing se
 
 \subsection{Recurents Neurals Networks}
 
-Les reseaux recurents, on ete cree pour permettre un transfert de l'information dans les cellules en prenant en compte l'infulence du temps. 
-Ici on parle d'une double propagation spaciaux temporelle. Cela donne la capacite a ces neuronnes d'intervenir dans l'analyse des phenomene evoluant dans le temps comme les videos, les series temporelles ...
+Recurrent networks, we were created to allow a transfer of information in the cells taking into account the infulence of time.
+Here we are talking about a double spatial temporal propagation. This gives the ability to these neurons to intervene in the analysis of phenomena evolving over 
+time such as videos, time series ...
 
-Les reseaux recurents on vu le jour avec le reseau de Hopfield\cite{Hopfield}. Ce dernier introduit la memoire dans les reseau permetant un passage au traver le temps des informations.Ils connaitrons quelques evolutions jusqu'a l'arive d'un autre type 
-de reseaux de neurone, Le \textit{Long Short Term Memory}\cite{lstm1}
+Recurrent networks have emerged with the Hopfield \cite{Hopfield} network. The latter introduces memory into the networks allowing information to pass through 
+time. They will experience some evolutions until the arrival of another type. Network of neurons, The \textit{Long Short Term Memory} \cite{lstm1}
 
 \begin{figure}[h]
   \centering
   \includegraphics[width=72mm]{Long_Short-Term_Memory.png}
-  \caption{Cellule LSTM}
+  \caption{LSTM Cell}
   \label{lstm}
 \end{figure}
 
@@ -357,62 +358,63 @@ la premiere porte que nous verons est porte de l'oublie. la fonction de la porte
 Les portes suivantes permettent de calculer l'etat d'entree et l'etat de sortie
 \[i_t = \sigma(UX_t + Wh_{t-1})\]
 \[O_t = \sigma(U^{\circ}X_t + W^{\circ}h_{t-1})\]
-La porte de sortie
+Output Dors
 \[g_t = tanh(U^gX_t + W^gh_{t-1})\]
-etat final de la cellule
+final state of cell
 \[c_t = i_tg_t + f_tc_{t-1}\]
-Et l'etat cache suivant
+Next Hidden state
 \[h_t = tanh(c_t)o_t\]
 
-Enfin en 2014 seront introduit les celule dites Gated Recurrent Unit (GRUs)\cite{cho2014learning}. 
+Finally, in 2014, the so-called Gated Recurrent Unit (GRUs)\cite{cho2014learning}. 
 
 \begin{figure}[h]
   \centering
   \includegraphics[width=70mm]{GRU.png}
-  \caption{Cellule GRU}
+  \caption{GRU Cell}
   \label{GRUs}
 \end{figure}
 
 La cellule GRU prend en entre 2 variables et genere deux sorties. Les entrees sont $h_t$ l'etat cache provenant de la precedente cellule 
 $x_t$ la valeur actuelle de l'entree ; les sorties sont quant a elles, $y^est$ la valeur de sortie estimee et $h_t$ l'etat cache estime.
 
-Du point de vue mathematique on a:
+On the mathematics point of vue we have:
 \[z_t = \sigma_g(W_{z}x_{t} + U_{z}h_{t-1} + b_{z})\]
 \[r_t = \sigma_g(W_{r}x_{t} + U_{r}h_{t-1} + b_{r})\]
 \[h_{t}^{est} = \phi_h(W_{h}x_{t} + U_{h}(r_t * h_{t-1}) + b_{h})\]
 \[h_t = (1 - z_t)*h_{t-1} + z_t*h_{t}^{est}\]
-ou $x_t$ est le vecteur d'entree, $h_t$ le vecteur de sortie, $z_t$ le vecteur de mise a jour des protes, $r_t$ vecteur de reinitialisation, $h_t^{est}$ Vecteur candidat d'acivaion.
-$W$, $U$ et $b$ sont les marices de parametre. $\sigma_g$ est la fonction sigmoide et $\phi_h$ est la tangente hyperbolique.
+Where $x_t$ is the input vector, $h_t$ the output vector, $z_t$ the update dors vector, $r_t$ reinitialisation vector, $h_t^{est}$ Vecteur candidat d'acivaion.
+$W$, $U$ et $b$ sont les marices de parametre. $\sigma_g$ is the sigmoide  fonction and $\phi_h$ est la tangente hyperbolique.
 
-Plus recement, les GRU ont ete modifie pour donner les reseaux Minimal Gated Unit \cite{heck2017simplified}\cite{zhou2016minimal}. Ces reseaux presentent l'avantage d'avoir un minimum
-d'entree de sortie et de porte logiques.
+More recently, the GRUs have been modified to give the Minimal Gated Unit networks \cite{heck2017simplified} \cite{zhou2016minimal}. These networks have the advantage 
+of having a minimum of input output and logic gate.
 
 \begin{figure}[h]
   \centering
   \includegraphics[width=70mm]{MRU.png}
-  \caption{Cellule MRU}
+  \caption{MRU Cell}
   \label{MRUs}
 \end{figure}
 
-\subsection{Autres reseaux}
-Les types de reseaux de neurones presente plus haut on tous la particularite d'etre en apprendtissage supervise. Ce genre  de reseaux est generalement utilise pour la classification.
-Dans cette partie nous nous interesserons au cas des autres types de reseaux dont l'apprentissage est generalement non supervisee. 
+\subsection{Others Networks}
+The types of neural networks presented above all have the particularity of being in supervised learning. This kind of network is generally used for classification. 
+In this part we will focus on the case of other types of networks whose learning is generally unsupervised.
 
-les premiers de ces reseaux seront, \textbf{Les Machines de Bolztmann}. l'origine de ces reseaux est l'article de Hinton et Sejnowski de 1983\cite{Rumelhart2}, ils sont utilise pour avoir des estimation de distribution
-probabiliste d'un jeux de donnee\cite{Salakhutdinov}. Ces derniers sont generalement utilise sous la forme de machine de bolzmann restreinte a deux couches de neurones. 
+the first of these networks will be, \emph{Bolztmann Machines}. the origin of these networks is the article by Hinton and Sejnowski of 1983 \cite{Rumelhart2}, they 
+are used to have probabilistic distribution estimates of a data set \ cite {Salakhutdinov}. These are generally used in the form of a Bolzmann machine restricted 
+to two layers of neurons.
 
-En suite nous avons les \textbf{chaines de Markov}, Il s'ait ici d'un reseaux qui a base de connaisance de l'etat actuelle et d'un ensemble de probabilite connue peut predire les etat futur. Elles sont utilise sur les 
-processus a temps discret, ou a temps continu et a espace d'etats discret.
+Next we have the \emph{Markov chains}. Here we have a network which based on knowledge of the current state and a set of known probabilities can predict future states. 
+They are used on discrete time, or continuous time and discrete state space processes.
 
 Enfin nous classeron un certain nombre de reseaux notemment les auto encodeur (auto-encodeur variationnel, auto encodeur de debruitage), les Reseaux generatifs adversariaux (...) dans la cathegorie des reseaux composees
 en cela qu'il sont issue de la composition d'un certain nombre de couche de neuronne issue des reseaux mentionne plus haut.
 
-\section{Pourquoi la compression des reseaux de neurones}%----------
-L'origine des objets connectes remonte a 1994 quand la start-up Violet a lance le concept de la lampe connecte en wifi DAL. Et depuis lors leur nombre n'a pa arrete de croitre, leur usage aussi. D'un autre cote le nombre d'outils 
-informatique a lui aussi augmente de facons considerable, avec l'invention des smartphones, des tabletes et autres.
+\section{Why the compression of neural networks}%----------
+The origin of connected objects dates back to 1994 when the start-up Violet launched the concept of the DAL wifi connected lamp. And since then their number has 
+not stopped growing, their use too. On the other hand, the number of computer tools has also increased considerably, with the invention of smartphones, tablets and others..
 
-Ces objets connnectes ont pour point commun de ne disposer ni d'une grande puissance de calcul ni d'un grand espace de stockage. Cette situation les eloignes des possiblite d'aplication des reseaux de neurones qui quand a eu on besoin
-d'une puissance de calcule importante et d'un espace de stockage lui aussi grand.
+These connected objects have in common that they have neither great computing power nor large storage space. This situation removes them from the possibility of 
+aplication of neural networks which when we needed significant computing power and also large storage space.
 
 \begin{table}[!h]  
 \begin{tabular}{|l|c|r|}
@@ -428,25 +430,23 @@ d'une puissance de calcule importante et d'un espace de stockage lui aussi grand
 \caption{Les Poids et temps de calcul de differents reseaux}
 \end{table}
 
-Pour rendre ces objet plus intelligent il est donc important pour nous de pouvoir developper des reseaux de neurones adaptés. Pour ce faire, 
-un certain nombre de moyens et de methodes ont ete developpe. Parmi les methodes qui s'attaquent a reduire le poid des reseaux on a, Le pruning, la quantification, la distillation de connaisance.
-D'autres approches visent une repartition des calclus entre plusieurs objets comme l'apprentissage federe. Nous explorerons ici en profondeur les approches qui 
-s'attellent a reduire la taille des reseaux et nous ferons une introduction de l'aprentissage federe. Enfin , Dans la mesure ndu possible, nous presenterons les resultas que nous avons eu en 
-modelisant les methodes.
+To make these objects smarter, it is therefore important for us to be able to develop suitable neural networks. To do this, a number of ways and methods have been 
+developed. Among the methods which tackle to reduce the weight of the networks one has, The pruning, the quantification, the distillation of knowledge. Other approaches 
+aim at a distribution of calclus between several objects such as federe learning. Here we will explore in depth the approaches that attempt to reduce the size of networks 
+and we will make an introduction to federe learning. Finally, as far as possible, we will present the results that we had by modeling the methods.
 
 \section{Le Pruning} %-------------------------------
 
 \subsection{C'est quoi le Pruning}
-L'une des premieres idee pour reduire la taille des reseaux en memoire, est de suprimer les connections inutiles entre les neurones.
-En effet lors de l'entrainement des reseaux de neurones et leur utilisation, ils existent potentiellement des connections qui se sont jamais 
-activee, leurs supression  fait donc gagner de l'espace de stockage.
+One of the first ideas for reducing the size of memory networks is to remove unnecessary connections between neurons. Indeed, during the training of neural networks and 
+their use, there are potentially connections that have never been activated, their suppression therefore saves storage space.
 
-Le Pruning est la methode de reduction de taille des reseaux de neurones qui consiste a suprimer les poids inferieure a un certain seuil.
+Pruning is the method of reducing the size of neural networks which consists in removing weights below a certain threshold.
 
 \begin{figure}[h]
   \centering
   \includegraphics[width=40mm]{pruning_steps.png}
-  \caption{etapes de Pruning}
+  \caption{Steps of Pruning}
   \label{Pruning_step}
 \end{figure}
 
@@ -454,16 +454,16 @@ Le Pruning est la methode de reduction de taille des reseaux de neurones qui con
   \centering
   \includegraphics[width=70mm]{pruning.png}
   \caption{Pruning}
-  \label{pruning du perceptron Multicouche}
+  \label{pruning of perceptron Multi-Layer perceptron}
 \end{figure}
-Les recherches dans ce dommaine sont oriente vers la resolution du probleme compression/ efficacite qui en decoule. 
+Research in this area is directed towards solving the resulting compression / efficiency problem.
 
-Dans la section qui suit, nous presenterons l'etat de l'art de la methode de pruning cela en nous  attardant sur certaines publications
-que nous avons selectionnee.
+In the following section, we will present the state of the art of the pruning method by focusing on some publications that we have selected.
 
-\subsection{Etat de l'art de la methode Pruning}
-La premiere publication majeure qui a pose les jalon de l'application de la methode de pruning nous date des annee 1991\cite{SYKung}. l'idee principale de ce dernier est 
-d'utiliser le mean square error associer a la norme de Forbenius pour 
+\subsection{State of the art of the Pruning method}
+
+The first major publication which laid the groundwork for the application of the pruning method dates back to 1991 \ cite {SYKung}. the main idea of the latter is to 
+use the mean square error associated with the Forbenius norm for
 
 \subsection{Le futur du Pruning}
 \subsection{Presentation de mes resultats}
