@@ -454,12 +454,76 @@ que nous avons selectionnee.
 \subsection{Etat de l'art de la methode Pruning}
 La premiere publication majeure qui a pose les jalon de l'application de la methode de pruning nous date des annee 1991\cite{SYKung}. l'idee principale de ce dernier est 
 d'utiliser le mean square error associer a la norme de Forbenius pour 
-
+ 
 \subsection{Le futur du Pruning}
 \subsection{Presentation de mes resultats}
 
 \section{Quantification}%---------------------
-\subsection{Quantification}
+La quantifictation se definit comme la division d'une valeur continue en un ensemble de valeurs discretes. De facon reele, tout element contenu dans un systeme electronique est
+d'une facon ou d'une autre quantifié les ordinateurs ne pouvant contenir que des valeurs discretes. Dans ce catre la la quantification va consister en la reduction du nombre de bits
+utilisées pour stocker l'information. Dans un premier temps elle a ete appliqué à l'echantillonagez de valeur dans les signaux et la la compression de ceux ci
+ou elle a montré une cappacité interessante. l'equation de la quantifictation sera la suivante:
+
+\[ Q(x) = \Delta * E[\frac{x}{\Delta} + \frac{1}{2}] \]
+
+La Quantification d'un signal introduit un certain type d'erreur qui est due au difference entre les valeurs reele et les valeurs une fois compressé, la formule de calcul de cette derniere est
+la suivante:
+
+\[ SNR_{dB} = 20\frac{Log_{10}(\frac{2*q}{2\sqrt{2}})}{\frac{q}{2\sqrt{3}}}\]
+
+Un reseaux de neurone est peut etre modelisé comme une fonction qui prend en entree une valeur $x$, son label correspondant $y$ et un ensemble de parametre $\theta$  qui nous retourne une une valeur correspondant à la classe
+que nous souhaitons predire. 
+
+\[ L(\theta) = \frac{1}{N} \sum_{n=1}^\infty l(x_{i}, y_{i}, \theta)\]
+
+Notre objectif sera de quantifier les valeurs contenues dans $\theta$ sans pour autant reduire l'efficacité de notre reseaux de neurones
+
+\subsection{Methode de Quantification}
+\subsubsection{Quantification uniforme}
+L'idee ici est de definir un sous ensemble de valeur dans le quel projeter uniformement les poids, la formule est la suivante\cite{DBLP:journals/corr/abs-2004-09602}:
+\[ Q(r) = E(\frac{r}{S}) - Z\]
+Ou Q est l'operateur de quantification, E la valeur entiere, r la valeur reel de l'entrée et Z la valeurs qui sera concidéré comme le centre de nos valeur projetées.
+
+On peut adjoindre à cette fonction de quantification une fonction de \textit{de-quantification} qui permet de revenir à une estimation de la valeur vraie
+\[ \vec{r} = S(Q(r) + Z)\]
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=70mm]{simetrycQuantization.png}
+  \caption{Symetric Quantification}
+  \label{Symetric Quantification}
+\end{figure}
+
+\subsubsection{Quantification asysmetrique}
+Cette methode de quantification est quasiment identique à la quantification uniforme a la diference qu'ici, l'espace de projection est un intervale $[\alpha, \beta]$ avec $-\alpha$ != $\beta$
+la formule de quantification est la suivante \cite{DBLP:journals/corr/abs-2004-09602}:
+\[ Q(r) = E(\frac{r}{S})\]
+ou 
+\[ S = \frac{\beta-\alpha}{2^{b}-1} \]
+le meileur choix en général est 
+\[S = \frac{2\max(|r|)}{2^{n}-1}\]
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=70mm]{asym_.png}
+  \caption{Symetric Quantification}
+  \label{Quantification Assimetrique}
+\end{figure}
+
+La quantification uniforme et la quantification asymetrique peuvent etre appliqué  à diffrent probleme selon certains mechanismes. Parmis les mechanismes possible on a: 
+
+\begin{itemize}
+  \item \textbf{la Quantification Dynamique} qui consiste a appliquer durant l'inference chacunes des methodes precedentes de facon adapté à chaque couche du reseaux. 
+  \item \textbf{La quantifiaction statique}, ici le choix de la methode de quantification est fait en amont du processus d'inference et appliqué identiquement à chaque couche.
+\end{itemize}
+
+On peut trouver comme autre methodes de quantification
+\begin{itemize}
+  \item \textbf{Quantification couche par couche}
+  \item \textbf{Quantification groupe par groupe}
+  \item \textbf{Quantification par chanel}
+  \item \textbf{Quantification par sous chanel}
+\end{itemize}
+  
 \subsection{Binarization}
 
 \section{Distillation de connaissance} %--------------

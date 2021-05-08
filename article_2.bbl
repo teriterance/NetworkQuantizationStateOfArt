@@ -139,6 +139,12 @@ Walter~Pitts Warren S.~McCulloch.
 \newblock Logical calculus of the ideas immanent in nervous activity.
 \newblock {\em Bulletin of Mathematical Biology}, 52(1/2):99--115, 1943.
 
+\bibitem{DBLP:journals/corr/abs-2004-09602}
+Hao Wu, Patrick Judd, Xiaojie Zhang, Mikhail Isaev, and Paulius Micikevicius.
+\newblock Integer quantization for deep learning inference: Principles and
+  empirical evaluation.
+\newblock {\em CoRR}, abs/2004.09602, 2020.
+
 \bibitem{WU20093432}
 Huaiqin Wu.
 \newblock Global stability analysis of a general class of discontinuous neural
